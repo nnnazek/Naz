@@ -9,7 +9,7 @@ class Direction:
     LEFT = 3
     RIGHT = 4
 
-class Shot:
+class Bullet:
     def __init__(self, x, y, dx, dy):
         self.x = x
         self.y = y
