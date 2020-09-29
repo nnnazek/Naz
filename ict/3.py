@@ -1,4 +1,9 @@
+x = int(input())
+y = int(input())
 a = int(input())
 b = int(input())
-area = a * b
-print(area)
+
+if abs(x - a) == abs(y - b):
+    print('YES')
+else:
+    print('NO')

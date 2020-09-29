@@ -1,9 +1,14 @@
-feet = int(input("Please enter a distance in feet: "))
-
-miles = feet * 0.000189394
-yards = feet * 0.333333333
-inches = feet * 12
-
-print("In miles: {}".format(miles))
-print("In yards: {}".format(yards))
-print("In inches: {}".format(inches))
+a = int(input())
+if a == 0:
+    print(0)
+else:
+    fib_prev, fib_next = 0, 1
+    n = 1
+    while fib_next <= a:
+        if fib_next == a:
+            print(n)
+            break
+        fib_prev, fib_next = fib_next, fib_prev + fib_next
+        n += 1
+    else:
+        print(-1)

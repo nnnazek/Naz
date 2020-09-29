@@ -1,6 +1,8 @@
-radius = float(input("Please enter a radius for a cylinder: "))
-height = float(input("Please enter the height of than cylinder: "))
-
-volume = math.pi * (radius*radius) * height
-
-print("The volume of this cylinder is {0:0.01f} units cubed.".format(volume))
+n = int(input())
+a = [int(x) for x in input().split()]
+s=a[-1]
+print(a[-1])
+for i in range(n-1,0,-1):
+            a[i] = a[i-1]
+a[0]=s
+print(a)
